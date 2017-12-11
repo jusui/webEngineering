@@ -4,10 +4,10 @@
         <title>Webpage with style</title>
         <style type="text/css">
             .blue {
-                color:blue;                
+                color:#4285F4;                
             }
             .large{
-                font-size: 200%;
+                font-size: 100%;
             }
             #green {
                 color:green;
@@ -16,12 +16,18 @@
                 text-decoration: underline;               
             }
             .first-section {
-                background: #FF0080;
+                background: lightgreen;
+                width:30%;
+                float:right;
             }
             .second-section {
                 background: yellow;
+                width:30%;
+                float:left;
             }
-            
+            .clear-float {
+                clear:both;                
+            }
         </style>
     </head>
 
@@ -37,6 +43,9 @@
             <p class = "large">virtual realityが体験できるVRゴーグルを発売します</p>
             <p id="green">このVRゴーグルは，従来品よりも<span class = "underlined">解像度が高く</span>なっています</p>
         </div>        
+        
+        <div class = "clear-float"></div>
+        <p>Third Paragraph</p>
     </body>
     
 </html>
