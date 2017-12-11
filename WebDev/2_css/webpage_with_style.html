@@ -3,21 +3,24 @@
     <head>
         <title>Webpage with style</title>
         <style type="text/css">
-            p{
-                color:black;
-                font-size:100%
+            .blue {
+                color:blue;                
             }
-            
-            h1 {
-                
-                color:purple;
+            .large{
+                font-size: 200%;
+            }
+            #green {
+                color:green;
+            }
+            .underlined {
+                text-decoration: underline;               
             }
         </style>
     </head>
 
     <body>
-        <h1 style="color: green">新プロダクトのご紹介</h1>
-        <p style="color:blue;font-size: 100%">新しくリリースする，プロダクトを紹介</p>
+        <h1>新プロダクトのご紹介</h1>
+        <p class="blue">今回は，新しくリリールするプロダクトをご紹介いたします。</p>
      
     </body>
     
@@ -25,11 +28,13 @@
     <p>内部CSS</p>
     
     <body>
-        <h1>新プロダクトのご紹介</h1>
-        <p>今回は，新しくリリースするプロダクトをご紹介します。</p>
+        <h1 class = "blue">新プロダクトのご紹介</h1>
+        <p class = "blue">今回は，新しくリリースするプロダクトをご紹介します。</p>
         
-        <p>virtual realityが体験できるVRゴーグルを発売します</p>
+        <p class = "large">virtual realityが体験できるVRゴーグルを発売します</p>
 
+        <p id="green">このVRゴーグルは，従来品よりも<span class = "underlined">解像度が高く</span>なっています</p>
+        
     </body>
         
        
