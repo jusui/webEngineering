@@ -2,67 +2,49 @@
 <html>
     <head>
         <title>JavaScript</title>
-        
-        
+        <style type = "text/css">
+            .circle {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                float: left;
+                margin: 20px;
+            }
+            #red-circle {
+                background-color: red;
+            }
+                #blue-circle {
+                    background-color: blue;
+            }
+            #yellow-circle {
+                background-color: yellow;
+            }
+
+        </style>
     </head>
-    <body>
-        <p id="text">Hello World</p>        
-        <button id="myButton">Change Text</button>
 
-        <script type="text/javascript">
-            document.getElementById("myButton").onclick = function() {
-                // alert("ボタンがクリックされました!　とパネルに表示");
-                document.getElementById("text").innerHTML = "クリックしました！とHTMLに表示"
-            }
-        </script>
-
-        
-        <p id="secondParagraph">JavaScriptは，</p>
-        <button id="secondButton">追記する！</button>
-        
-        <p id="thirdParagraph">スタイルを変更してみる！</p>
-        <button id="changeStyle">スタイルを変更</button>
-
-        <script type="text/javascript">
-            document.getElementById("secondButton").onclick = function() {
-//                document.getElementById("secondParagraph").innerHTML = 
-//                    document.getElementById("secondParagraph").innerHTML + 
-//                    "ブラウザでもサーバサイドでも動作するプログラミング言語です。"
-
-                //文字列を追記する。appendする.
-                document.getElementById("secondParagraph").innerHTML += "ブラウザでもサーバサイドでも動作するプログラミング言語です。";
-        }
-            
-            document.getElementById("changeStyle").onclick = function() {
-                // document.getElementById("thirdParagraph").style.color = "red";
-                document.getElementById("thirdParagraph").style.display = "none";
-                
-            }
-
-        </script>
-        
-        
-<!--    Lec56    
-        <script type="text/javascript">
-            /*
-            getElementById は，ID名を指定してブロック要素を取り出します。
-            innerHTMLは，その中のコンテンツ(テキスト)をを取り出します。
-            */
-            document.getElementById("text").innerHTML = "Hello Rob!"
-        </script>
-
--->
-<!--
-        // Lec55
-        <button onclick="alert('Hi Rob!')">Click Me!
-        </button>
-        
-        <script type="text/javascript">
-            alert("This is second message!");
-        </script>
--->
-        
-    </body>
     
+    <body>
+        
+        <div id="red-circle" class="circle"> </div>
+        
+        <div id="blue-circle" class="circle"> </div>
+        
+        <div id="yellow-circle" class="circle"> </div>
+        
+        <script type="text/javascript">
+            document.getElementById("red-circle").onclick = function() {
+                document.getElementById("red-circle").style.display = "none";                
+            }
+            document.getElementById("blue-circle").onclick = function() {
+                document.getElementById("blue-circle").style.display = "none";                
+            }
+            document.getElementById("yellow-circle").onclick = function() {
+                document.getElementById("yellow-circle").style.display = "none";                
+            }
+            
+        </script>
+
+    </body>   
     
 </html>
