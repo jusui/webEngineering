@@ -3,6 +3,7 @@
     <head>
         <title>JavaScript</title>
         <style type = "text/css">
+/*
             .circle {
                 width: 200px;
                 height: 200px;
@@ -19,13 +20,31 @@
             #yellow-circle {
                 background-color: yellow;
             }
+*/
 
         </style>
     </head>
 
     
     <body>
+        <p><input type="text" id="inputForm">Input your name.</p>
+        <button id="submitButton">送信する</button>
         
+
+        <p id="newMessage"></p>
+        
+        <script type="text/javascript">
+            // var x = 5;
+            // alert(x);
+            document.getElementById("submitButton").onclick = function() {
+                var name = "";
+                name = document.getElementById("inputForm").value;
+                // alert(name);
+                document.getElementById("newMessage").innerHTML = name + "さん，以下が申し込み内容になります。"
+            }
+            
+        </script>
+<!--
         <div id="red-circle" class="circle"> </div>
         
         <div id="blue-circle" class="circle"> </div>
@@ -44,6 +63,7 @@
             }
             
         </script>
+-->
 
     </body>   
     
