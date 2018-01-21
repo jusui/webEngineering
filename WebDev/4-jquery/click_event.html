@@ -8,6 +8,13 @@
                 height: 150px;
                 border-radius: 50%;
                 background-color: green;
+                margin: 10px;
+            }
+            .square {
+                width: 150px;
+                height: 150px;
+                background-color: red;                
+                margin: 10px;
             }
         </style>
     </head>
@@ -18,21 +25,27 @@
 -->
         <script src="jquery-3.2.1.min.js"></script>
         
+        
         <div id="circle"></div>
-      
+
+        <div class="square"></div>
+
+        <div class="square"></div>
         <script type="text/javascript">
+//            $("div").click(function(){
+//                alert("円がクリックされました!");
+//            })
             $("#circle").click(function(){
-                $("#circle").animate({
-                    width:"400px",
-                    height:"400px", 
-                    marginLeft:"100px"
-                },2000, function(){
-                    $("#circle").css("background-color", "red");
-                });
+                alert("円がクリックされました!");
             })
-            
+            $(".square").click(function(){
+                alert("四角がクリックされました!");
+            })
+
         </script>
+
         
     </body>
+    
     
 </html>

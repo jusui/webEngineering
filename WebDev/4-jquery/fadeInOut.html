@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            #fadeInText {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+<!--
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        </script>
+-->
+        <script src="jquery-3.2.1.min.js"></script>
+        
+        <p id="text">このテキストは反転します</p>
+        <button id="toggle">toggle!</button>
+
+        <p></p>
+        
+<!--
+        <p id="fadeInText">最初は隠れています</p>
+        <button id="fadeIn">fadeIn!</button>       
+-->
+       
+        <script type="text/javascript">
+            $("#toggle").click(function(){
+                if($("#text").css("display") == "none") {                    
+                    $("#text").fadeIn("slow");
+                } else {
+                    $("#text").fadeOut("slow");
+                }
+            })
+            
+//            $("#fadeIn").click(function(){
+//                $("#fadeInText").fadeIn("slow");
+//            })
+
+        </script>
+        
+    </body>
+    
+</html>

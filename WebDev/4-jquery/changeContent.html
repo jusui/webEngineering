@@ -8,6 +8,7 @@
                 height: 150px;
                 border-radius: 50%;
                 background-color: green;
+                margin: 10px;
             }
         </style>
     </head>
@@ -19,18 +20,17 @@
         <script src="jquery-3.2.1.min.js"></script>
         
         <div id="circle"></div>
-      
+        <p>ここに文章が入ります。</p>
+        
+        <iframe src="http://entreschoolonline.com"></iframe>
+             
         <script type="text/javascript">
-            $("#circle").click(function(){
-                $("#circle").animate({
-                    width:"400px",
-                    height:"400px", 
-                    marginLeft:"100px"
-                },2000, function(){
-                    $("#circle").css("background-color", "red");
-                });
+            $("div").hover(function(){
+//                $("p").html("Divがクリックされました!");
+//                alert($("p").html());
+                $("iframe").attr("src", "https://www.udemy.com/completeweb2_jp/learn/v4/content");
             })
-            
+
         </script>
         
     </body>
